@@ -1,5 +1,36 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.sideBar {
+  width: 25vw;
+  order: -1;
+}
+
+#search {
+  width: 100%;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.venueList {
+  padding: .5rem;
+}
+
+.listItem {
+  list-style: none;
+  font-size: 1rem;
+  padding: .3rem;
+  background: #573872;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #888;
 }
 
 .App-logo {
