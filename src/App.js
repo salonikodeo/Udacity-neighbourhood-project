@@ -24,7 +24,7 @@ class App extends Component {
     });
     this.setState({markers: Object.assign(this.state.markers, markers)});
   }
-  onMarkerClick = marker => {
+  onMarkerClick = (marker) => {
     this.closeAllMarkers();
     marker.isOpen = true;
     this.setState({markers: Object.assign(this.state.markers,marker)});

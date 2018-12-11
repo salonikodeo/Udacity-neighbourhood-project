@@ -23,15 +23,15 @@ const MyMapComponent = withScriptjs(
             >
             {marker.isOpen && venInfo.icon && (
               <InfoWindow>
-                <div>
-                    <img
-                      src={`${venInfo.icon.prefix}200${venInfo.icon.suffix}`}
-                      alt={"image of the Venue"}
-                    />
+                <React.Fragment>
+                  <img
+                    src={`${venInfo.icon.prefix}200${venInfo.icon.suffix}`}
+                    alt={"image of the Venue"}
+                  />
                   <p>{venInfo.name}</p>
                   <br/>
                   <p>{venInfo.location.formattedAddress}</p>
-                </div>
+                </React.Fragment>
               </InfoWindow>
             )}
           </Marker>
